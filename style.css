@@ -214,9 +214,6 @@ footer .icons a img {
   }
 }
 
-/*#####################*/
-/*       NavBAR        */
-/*#####################*/
 #navbar {
   position: sticky;
   top: 0;
@@ -244,70 +241,55 @@ footer .icons a img {
   color: white;
 }
 
-
-
-/*#####################*/
-/*       ImgGatos      */
-/*#####################*/
 .imgGato {
-  width: 100%; /* ocupa toda a largura disponível do container */
-  height: auto; /* mantém a proporção original da imagem */
-  max-width: 600px; /* tamanho máximo padrão em telas maiores */
-  display: block; /* evita espaços indesejados abaixo da imagem */
-  margin: 0 auto; /* centraliza a imagem horizontalmente */
+  width: 100%;
+  height: auto; 
+  max-width: 600px;
+  display: block; 
+  margin: 0 auto; 
 }
 
-/* Quando a tela for menor que 480px (celulares), ajusta o limite */
 @media (max-width: 480px) {
   .imgGato {
-    max-width: 350px; /* limite máximo no celular */
+    max-width: 350px;
   }
 }
-
-
-/*######################*/
-/* Titulos e SubTitulos */
-/*######################*/
 
 #slogan {
   color: #c24b5f;
 }
 
-
-/* ==== ESTILO BASE ==== */
 #slogan {
-  background-color: #ffe6e6; /* cor de fundo suave (rosa claro) */
-  text-align: center; /* centraliza o texto */
-  padding: 40px 20px; /* espaçamento interno */
-  overflow: hidden; /* evita que o texto “vaze” durante a animação */
+  background-color: #ffe6e6; 
+  text-align: center; 
+  padding: 40px 20px; 
+  overflow: hidden; 
 }
 
 .slogan-container h3 {
-  font-size: 1.8rem; /* tamanho do texto */
-  color: #333; /* cor do texto */
-  font-weight: 600; /* deixa mais marcante */
-  animation: girarEntrada 2s ease-out; /* ativa a animação */
+  font-size: 1.8rem; 
+  color: #333;
+  font-weight: 600;
+  animation: girarEntrada 2s ease-out; 
 }
 
-/* ==== ANIMAÇÃO ==== */
 @keyframes girarEntrada {
   0% {
-    transform: rotateY(90deg); /* começa girado */
-    opacity: 0; /* invisível */
+    transform: rotateY(90deg);
+    opacity: 0;
   }
   60% {
     transform: rotateY(-10deg);
     opacity: 1;
   }
   100% {
-    transform: rotateY(0deg); /* posição final normal */
+    transform: rotateY(0deg);
     opacity: 1;
   }
 }
 
-/* ==== RESPONSIVIDADE ==== */
 @media (max-width: 480px) {
   .slogan-container h3 {
-    font-size: 1.4rem; /* reduz tamanho em telas pequenas */
+    font-size: 1.4rem;
   }
 }
