@@ -94,8 +94,31 @@
         </div>
     </section>
 
+<section class="formulario" id="formulario">
+  <h2>Entre em Contato</h2>
+  
+  <?php
+if (isset($_GET['msg'])) {
+    $msg = $_GET['msg'];
+    if ($msg == 1) {
+        echo "<h3>Sua Mensagem foi enviada! Aguarde Contato</h3>";
+    }
+}
+  ?>
+  
+  <form action="processar.php" method="POST" class="contato-form">
+    <input type="text" name="nome" placeholder="Seu nome" required>
+    <input type="email" name="email" placeholder="Seu e-mail" required>
+    <input type="tel" name="telefone" placeholder="Seu telefone" required>
+    <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+    <button type="submit">Enviar Mensagem</button>
+  </form>
+</section>
+
+
+
     <section class="adocao">
-        <h2>Gatinhos Atendidos</h2>
+        <h2>Conheça alguns dos Gatinhos que já ajudamos</h2>
 
         <div class="carrossel">
             <div class="slides">
@@ -113,19 +136,22 @@
         </div>
     </section>
 
+
+
+    
     <footer>
         <div class="links">
             <a
-                href="https://www.mercadopago.com.br/subscriptions/checkout/v2?preapproval_plan_id=2c9380849788f4e40197a311365c091f">Ajuda
+                href="https://www.mercadopago.com.br/subscriptions/checkout/v2?preapproval_plan_id=2c9380849788f4e40197a311365c091f" target="_blank">Ajuda
                 Mensal</a>
             <a
-                href="https://docs.google.com/forms/d/1uNAEL01SA6h2EH1qdphq23YGwPSHCUuEIB9Xf4PLz5U/viewform?edit_requested=true">Adote
+                href="https://docs.google.com/forms/d/1uNAEL01SA6h2EH1qdphq23YGwPSHCUuEIB9Xf4PLz5U/viewform?edit_requested=true" target="_blank">Adote
                 um Felino</a>
             <a
-                href="https://api.whatsapp.com/send/?phone=5544998116815&text=Ol%C3%A1+tenho+interesse+em+ser+voluntario+%EF%BF%BD+&type=phone_number&app_absent=0">Seja
+                href="https://api.whatsapp.com/send/?phone=5544998116815&text=Ol%C3%A1+tenho+interesse+em+ser+voluntario+%EF%BF%BD+&type=phone_number&app_absent=0" target="_blank">Seja
                 um Voluntário</a>
             <a
-                href="https://api.whatsapp.com/send/?phone=5544998116815&text=Ol%C3%A1+quero+me+tornar+um+PADRINHO+do+Projeto+%EF%BF%BD+&type=phone_number&app_absent=0">Apadrinhe</a>
+                href="https://api.whatsapp.com/send/?phone=5544997074203&text=Ol%C3%A1+quero+me+tornar+um+PADRINHO+do+Projeto+%EF%BF%BD+&type=phone_number&app_absent=0" target="_blank">Apadrinhe</a>
         </div>
 
         <div class="social" id="contato">

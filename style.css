@@ -214,6 +214,11 @@ footer .icons a img {
   }
 }
 
+/*******************************/
+/*   NAV BAR - Codigos Renato */
+/*******************************/
+
+
 #navbar {
   position: sticky;
   top: 0;
@@ -291,5 +296,78 @@ footer .icons a img {
 @media (max-width: 480px) {
   .slogan-container h3 {
     font-size: 1.4rem;
+  }
+}
+
+/*********************************/
+/* FORMULARIO DE CONTATO - Renato */
+/*********************************/
+
+
+.formulario {
+  background-color: #fff7f7;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.formulario h2 {
+  color: #333;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.contato-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contato-form input,
+.contato-form textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.contato-form input:focus,
+.contato-form textarea:focus {
+  border-color: #d67c7c;
+}
+
+.contato-form button {
+  background-color: #d67c7c;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contato-form button:hover {
+  background-color: #b85d5d;
+}
+
+@media (max-width: 480px) {
+  .formulario {
+    padding: 40px 15px;
+  }
+  .formulario h2 {
+    font-size: 1.6rem;
+  }
+  .contato-form input,
+  .contato-form textarea {
+    font-size: 0.95rem;
+    padding: 12px;
   }
 }
