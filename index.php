@@ -122,16 +122,14 @@ if (isset($_GET['msg'])) {
 
         <div class="carrossel">
             <div class="slides">
-                <div><img src="imagens/adocao.avif" alt="Gato 1"></div>
-                <div><img src="imagens/adocao2.jpg" alt="Gato 2"></div>
-                <div><img src="imagens/adocao3.jpg" alt="Gato 3"></div>
-                <div><img src="imagens/adocao4.jpg" alt="Gato 4"></div>
-                <div><img src="imagens/adocao5.webp" alt="Gato 4"></div>
-                <div><img src="imagens/adocao6.jpg" alt="Gato 4"></div>
-                <div><img src="imagens/adocao7.webp" alt="Gato 4"></div>
-                <div><img src="imagens/gato8.jpg" alt="Gato 4"></div>
-                <div><img src="imagens/gato9.jpg" alt="Gato 4"></div>
-                <div><img src="imagens/gato10.jpg" alt="Gato 4"></div>
+
+            <?php
+            
+            for ($i = 1; $i <= 9; $i++) {
+                echo '<div><img src="imagens/gatinho' . $i . '.jpg" alt="Gato ' . $i . '"></div>';
+            }
+
+            ?>
             </div>
         </div>
     </section>
